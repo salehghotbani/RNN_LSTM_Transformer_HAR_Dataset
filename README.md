@@ -9,21 +9,30 @@ The **HAR Dataset** (Human Activity Recognition) is a widely-used dataset in the
 most
 commonly referred to as the UCI HAR Dataset, published by the University of California, Irvine (UCI).
 
-🔹 Key Features:
-It contains data collected from the accelerometer and gyroscope sensors of a Samsung Galaxy S II smartphone.
+## 📊 Dataset Overview
 
-Data was gathered from 30 volunteers performing six different activities:
+- **Source:** UCI Machine Learning Repository
+- **Devices:** Samsung Galaxy S II smartphone
+- **Sensors:** Accelerometer & Gyroscope
+- **Sampling Rate:** 50 Hz
+- **Subjects:** 30 volunteers (age 19–48)
 
-* Walking
-* Walking Upstairs
-* Walking Downstairs
-* Sitting
-* Standing
-* Laying
+### 🎯 Goal
 
-The signals were sampled at 50Hz.
+To predict one of six activities performed by a person, based on sensor data collected from a smartphone.
 
-The dataset is divided into training and test sets.
+---
+
+## 🧍 Activities (Target Classes)
+
+| Label | Activity           |
+|-------|--------------------|
+| 1     | Walking            |
+| 2     | Walking Upstairs   |
+| 3     | Walking Downstairs |
+| 4     | Sitting            |
+| 5     | Standing           |
+| 6     | Laying             |
 
 🔹 Use Cases:
 This dataset is frequently used in machine learning, deep learning, signal processing, and health monitoring
@@ -36,8 +45,7 @@ elderly care.
 * Optimizer: SGD
 * Momentum: 0.9
 
-#### Selected the best Larning rate and the wight decay
-
+## Selected the best Larning rate and the wight decay
 
 * RNN:
     - Larning rate: 0.25
@@ -49,18 +57,21 @@ elderly care.
     - Larning rate: 0.1
     - Weight decay: 1e-5
 
----
 
-#### Compare the results:
+## Compare the results:
 
-##### Loss Train:
+### Loss Train:
+
 ![loss_train.png](documentation/loss_train.png)
 
-##### Loss Valid:
+### Loss Valid:
+
 ![loss_valid.png](documentation/loss_valid.png)
 
-##### Accuracy Train:
+### Accuracy Train:
+
 ![accuracy_train.png](documentation/accuracy_train.png)
 
-##### Accuracy Valid:
+### Accuracy Valid:
+
 ![accuracy_valid.png](documentation/accuracy_valid.png)
